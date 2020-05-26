@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
@@ -9,14 +10,17 @@ const IndexPage = () => {
         pulvinar sapien et ligula ullamcorper malesuada. Tellus in hac habitasse
         platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas
         volutpat blandit aliquam etiam erat. Netus et malesuada fames ac.
-        Egestas maecenas pharetra convallis posuere. At lectus urna duis
-        convallis convallis tellus. A scelerisque purus semper eget duis. At
-        elementum eu facilisis sed odio morbi quis commodo odio. Nunc aliquet
-        bibendum enim facilisis gravida neque. Eget nunc lobortis mattis aliquam
-        faucibus purus in. Mattis vulputate enim nulla aliquet porttitor lacus
-        luctus accumsan tortor. Mattis vulputate enim nulla aliquet porttitor.
-        Neque laoreet suspendisse interdum consectetur libero id.
+        Egestas maecenas pharetra convallis posuere.
       </h2>
+      <div>
+        <Link to="/about">About Me</Link>
+      </div>
+      <div>
+        <Link to="/contact">Contact Me</Link>
+      </div>
+      <div>
+        <Link to="/blog">My Blog</Link>
+      </div>
     </div>
   )
 }
