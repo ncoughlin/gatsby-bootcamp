@@ -1,8 +1,12 @@
 import React from "react"
 
+import Header from "../components/header"
+import Footer from "../components/footer"
+
 const ContactPage = () => {
   return (
     <div>
+      <Header />
       <h1> Contact </h1>
       <p>
         {" "}
@@ -14,6 +18,7 @@ const ContactPage = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.{" "}
       </p>
+      <Footer />
     </div>
   )
 }

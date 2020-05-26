@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from 'gatsby';
 
+import Header from '../components/header';
+import Footer from '../components/footer';
+
 const IndexPage = () => {
   return (
     <div>
+      <Header />
       <h1>Nick Coughlin</h1>
       <h2>
         Nisl nisi scelerisque eu ultrices vitae auctor eu. Massa tincidunt nunc
@@ -12,15 +16,8 @@ const IndexPage = () => {
         volutpat blandit aliquam etiam erat. Netus et malesuada fames ac.
         Egestas maecenas pharetra convallis posuere.
       </h2>
-      <div>
-        <Link to="/about">About Me</Link>
-      </div>
-      <div>
-        <Link to="/contact">Contact Me</Link>
-      </div>
-      <div>
-        <Link to="/blog">My Blog</Link>
-      </div>
+      
+      <Footer />
     </div>
   )
 }
