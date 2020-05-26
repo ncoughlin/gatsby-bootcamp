@@ -1,24 +1,19 @@
-import React from "react";
-import { Link } from 'gatsby';
+import React from "react"
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>Nick Coughlin</h1>
-      <h2>
+      <p>
         Nisl nisi scelerisque eu ultrices vitae auctor eu. Massa tincidunt nunc
         pulvinar sapien et ligula ullamcorper malesuada. Tellus in hac habitasse
         platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas
         volutpat blandit aliquam etiam erat. Netus et malesuada fames ac.
         Egestas maecenas pharetra convallis posuere.
-      </h2>
-      
-      <Footer />
-    </div>
+      </p>
+    </Layout>
   )
 }
 
