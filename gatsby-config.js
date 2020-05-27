@@ -5,8 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Gatsby Training',
+    author: 'Nick Coughlin'
+  },
   plugins: [
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    'dotenv'
   ],
 }
