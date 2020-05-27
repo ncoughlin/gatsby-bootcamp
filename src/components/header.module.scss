@@ -1,4 +1,30 @@
-.link {
-    color: rgb(226, 33, 142);
+.header {
+    padding: 1rem 0 3rem;
 }
 
+.title {
+    color: black;
+    font-Size: 3rem;
+    text-decoration: none;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    color: rgb(226, 33, 142);
+    font-size: .9rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: gray;
+}
+
+.active-nav-item {
+    color: rgb(100, 41, 75);
+}
