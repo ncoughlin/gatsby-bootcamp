@@ -6,12 +6,20 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Training',
-    author: 'Nick Coughlin'
+    title: "Gatsby Training",
+    author: "Nick Coughlin",
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -25,23 +33,23 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [
-          'gatsby-remark-relative-images',
+          "gatsby-remark-relative-images",
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 750,
-              linkImagesToOriginal: false
-            }
-          }
+              linkImagesToOriginal: false,
+            },
+          },
         ],
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`
-      }
-    }
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
   ],
 }
