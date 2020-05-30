@@ -1,17 +1,15 @@
 import React from "react"
 
 import Layout from '../components/layout';
+import Head from '../components/head'
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Head />
       <h1>Nick Coughlin</h1>
       <p>
-        Nisl nisi scelerisque eu ultrices vitae auctor eu. Massa tincidunt nunc
-        pulvinar sapien et ligula ullamcorper malesuada. Tellus in hac habitasse
-        platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas
-        volutpat blandit aliquam etiam erat. Netus et malesuada fames ac.
-        Egestas maecenas pharetra convallis posuere.
+        Welcome to the Home Page
       </p>
     </Layout>
   )
