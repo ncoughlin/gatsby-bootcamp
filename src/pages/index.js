@@ -6,7 +6,7 @@ import Head from '../components/head'
 const IndexPage = () => {
   return (
     <Layout>
-      <Head />
+      <Head title='Home' />
       <h1>Nick Coughlin</h1>
       <p>
         Welcome to the Home Page
